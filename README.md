@@ -1,0 +1,2 @@
+# leetcodeSolutions
+leetcode solutions(java)
