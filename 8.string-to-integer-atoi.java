@@ -2,6 +2,10 @@
  * @lc app=leetcode id=8 lang=java
  *
  * [8] String to Integer (atoi)
+ * 
+ * +-2 => 0 ; ++1 => 1; '   -1' => -1
+ * 
+ * I wanna to say wtf!?
  */
 class Solution {
     public int myAtoi(String str) {
