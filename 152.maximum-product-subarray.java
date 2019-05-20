@@ -3,7 +3,9 @@
  *
  * [152] Maximum Product Subarray
  * 
- * dp(i, j) = max(dp(i, j - 1), dp(i + 1, j), multi(i, j))
+ * max = Math.max(Math.max(preMax * nums[i], nums[i]), preMin * nums[i]);
+            min = Math.min(Math.min(preMax * nums[i], nums[i]), preMin * nums[i]);
+            res = Math.max(res, max);
  */
 class Solution {
     public int maxProduct(int[] nums) {
