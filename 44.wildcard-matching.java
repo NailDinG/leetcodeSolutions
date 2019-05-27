@@ -2,6 +2,14 @@
  * @lc app=leetcode id=44 lang=java
  *
  * [44] Wildcard Matching
+ * 
+ * Here, we use a two demension array to denote whether substrings of s and p match. 
+ *   match[i][j] denotes whether s.substring(0, i) and p.substring(0, j) matches. 
+ *   If p.charAt(j) is not *, we judge whether p.charAt(j) and s.charAt(i) matches. 
+ *   If p.charAt(j) is *, then there could be three conditions:
+ *     match[i][j] = match[i][j - 1], i.e., * is decoded as empty sequence
+ *     match[i][j] = match[i - 1][j - 1], i.e., * is decoded as one character
+ *     match[i][j] = match[i - 1][j], i.e., * is decoded as more than one character
  */
 class Solution {
 
