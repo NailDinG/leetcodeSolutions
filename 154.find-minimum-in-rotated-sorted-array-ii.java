@@ -1,7 +1,7 @@
 /*
- * @lc app=leetcode id=153 lang=java
+ * @lc app=leetcode id=154 lang=java
  *
- * [153] Find Minimum in Rotated Sorted Array
+ * [154] Find Minimum in Rotated Sorted Array II
  */
 class Solution {
     public int findMin(int[] nums) {
@@ -12,7 +12,7 @@ class Solution {
         while (start <= end) {
             int mid = start + (end - start) / 2;
             if (nums[start] < nums[end]) {
-                return nums[start];
+                return Math.min(nums[start], min);
             } else if (nums[start] > nums[end]) {
                 min = Math.min(min, nums[end]);
                 if (nums[mid] >= nums[start]) {
