@@ -2,6 +2,7 @@
  * @lc app=leetcode id=115 lang=java
  *
  * [115] Distinct Subsequences
+ * <a href='https://leetcode.com/problems/distinct-subsequences/discuss/37327/Easy-to-understand-DP-in-Java'>From Here</a>
  */
 class Solution {
     public int numDistinct(String s, String t) {
